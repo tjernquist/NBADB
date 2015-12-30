@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <bean id="dataSource" 
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/nbadb"/>
+        <property name="username" value="root"/>
+        <property name="password" value="password"/>
+    </bean>
+   
+    <bean id="playerjdbctemplate" class = "nbadb.DAO.PlayerJDBCTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="teamjdbctemplate" class = "nbadb.DAO.TeamJDBCTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="player" class = "nbadb.player.Player" autowire ="byType"/>
+    
+    <bean id="playerboxscore" class= "nbadb.player.PlayerBoxScore"/>
+    
+    <bean id="playercareerstats" class= "nbadb.player.PlayerCareerStats"/>
+    
+    <bean id="gameheader" class= "nbadb.team.GameHeader"/>
+    
+    <bean id="gameboxscore" class= "nbadb.team.GameBoxScore"/>
+
+    <bean id="playerController" class="nbadb.web.PlayerController" autowire="byType"/>
+    
+    <bean id="teamController" class="nbadb.web.TeamController" autowire="byType"/>
+
+</beans>

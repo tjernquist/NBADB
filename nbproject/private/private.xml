@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Adis/Documents/NetBeansProjects/SpringExampleMVC/web/WEB-INF/jsp/gameheaders.jsp</file>
+            <file>file:/C:/Users/Adis/Documents/NetBeansProjects/SpringExampleMVC/src/java/nbadb/web/PlayerController.java</file>
+            <file>file:/C:/Users/Adis/Documents/NetBeansProjects/SpringExampleMVC/src/java/nbadb/web/TeamController.java</file>
+            <file>file:/C:/Users/Adis/Documents/NetBeansProjects/SpringExampleMVC/src/java/nbadb/DAO/PlayerJDBCTemplate.java</file>
+            <file>file:/C:/Users/Adis/Documents/NetBeansProjects/SpringExampleMVC/src/java/nbadb/team/GameBoxScore.java</file>
+        </group>
+    </open-files>
+</project-private>
