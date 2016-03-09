@@ -23,9 +23,6 @@
     <script type="text/javascript" src="http://localhost:8080/SpringExampleMVC/resources/js/bootstrap.min.js"/>"></script>
 
 
-
-
-
 </head>
 <body id="homepage">
 
@@ -73,7 +70,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>NBA</h1>
+                <h1>Nbadb</h1>
                 <p>Prototype</p>
             </div>
 

@@ -58,9 +58,7 @@
                     <li class="active">
                         <a href="http://localhost:8080/SpringExampleMVC/">Home</a>
                     </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
+                  
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Boxscores <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="about-us">
@@ -187,15 +185,8 @@
                             </table>
                         </ul>
                     </li>
-
-
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-
+               </ul>
             </div>
-
         </div><!-- /.container -->
     </nav>
 

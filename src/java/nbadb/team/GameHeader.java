@@ -8,12 +8,12 @@ import java.util.Date;
  */
 public class GameHeader {
     
-    public Date gameDate;
-    public String gameID;
-    public String gamecode;
-    public int homeTeamID;
-    public int awayTeamID;
-    public int noPeriods;
+    private Date gameDate;
+    private String gameID;
+    private String gamecode;
+    private int homeTeamID;
+    private int awayTeamID;
+    private int noPeriods;
 
     public Date getGameDate() {
         return gameDate;
